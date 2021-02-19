@@ -36,12 +36,13 @@
 
 ### Commands
 
-* `--rm`: automatically clean up the container and remove the file system when the container exits. Use during DEVELOPMENT
-* `-it`: use for Dev
-* `-p`: 
+* `--rm`: automatically clean up the container and remove the file system when the container exits. (DEV)
+* `-it`: pseudo-tty and STDIN. (DEV)
+* `-p 80:80`: port mapping (PROD)
 
 ---
 
 ### Future work
 
-CodeCommit and CodeBuild
+* CodeCommit and CodeBuild
+* Use CodeDeploy to deploy from Github. Then change code and see app change downstream.
